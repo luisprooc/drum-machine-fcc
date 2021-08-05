@@ -1,38 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap');
 
-html,body{
-    margin: 0;
-    padding: 0;
-    color: white;
-}
-
 body{
     font-family: 'Ubuntu', sans-serif;
-    height: 100vh;
     box-sizing: border-box;
     overflow-x: hidden;
     background-color: #1a1b1d;
+    color: white;
 }
 
 main{
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
+    max-width: 40rem;
+    margin: 5em auto;
 }
 
 #drum-machine{
-    display: flex;
+  box-shadow: 0 0 15px silver;
+  padding: 10%;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#display{
+    margin: 0;
+    text-align: center;
+    background-color: aliceblue;
+    color: #1a1b1d;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+}
+
+#pad{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
 
 .drum-pad{
-    display: flex;
-    flex-direction: column;
-    background-color: aliceblue;
+    background-color: white;
     border: none;
-    width: 50%;
-    margin: 0 10%;
+    padding-top: 30%;
+    padding-bottom: 30%;
+    cursor: pointer;
+    border-radius: 10px;  
+    font-size: larger;
+}
+
+.drum-pad:active{
+   opacity: 0.5;
 }
 
 p{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
